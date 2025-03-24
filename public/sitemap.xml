@@ -3,7 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/event/</loc>
-    <lastmod>2025-03-24T21:38:41+08:00</lastmod>
+    <lastmod>2025-03-24T21:44:52+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/event/rotate_his/</loc>
+    <lastmod>2025-03-24T21:44:52+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/event/rotate/</loc>
     <lastmod>2025-03-24T21:38:41+08:00</lastmod>
