@@ -46,3 +46,17 @@ main.pb7 {
   font-size: 2.5rem;
   color: #2c3e50;
 }
+/* 定义宋体字体（需确保用户系统已安装） */
+@font-face {
+  font-family: "NumberFont";
+  src: local("SimSun"), local("Songti SC");
+  unicode-range: U+30-39; /* 仅覆盖 0-9 数字 */
+}
+
+/* 应用数字字体 */
+body {
+  font-family: 
+    "NumberFont",  /* 数字专用字体 */
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, 
+    "Microsoft YaHei", sans-serif; /* 其他内容字体 */
+}
