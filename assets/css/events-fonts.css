@@ -36,21 +36,27 @@
   }
 }
 
-/* ====== 文字对齐细节 ====== */
+/* 更明确的选择器 + 强制优先级 */
+article.event-article {
+  max-width: 90% !important;
+  margin: 0 auto !important;
+  padding: 0 4em 0 8em !important; /* 临时测试用 */
+}
+
+/* 响应式设计增强 */
+@media (min-width: 1200px) {
+  article.event-article {
+    max-width: 70%;
+  }
+}
+
+/* 文本控制 */
 .event-content {
-  text-align: left !important;       /* 强制左对齐 */
-  line-height: 1.8 !important;       /* 增加行高提升可读性 */
+  text-align: left;
+  line-height: 1.8;
 }
 
 .event-content p {
-  margin: 0.8em 0 !important;        /* 段落间距 */
-  text-indent: 2em !important;       /* 首行缩进 2em */
-}
-
-/* 排除标题、列表等元素的首行缩进 */
-.event-content h1,
-.event-content h2,
-.event-content ul,
-.event-content ol {
-  text-indent: 0 !important;
+  margin: 0.8em 0;
+  text-indent: 2em;
 }

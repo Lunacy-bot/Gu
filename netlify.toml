@@ -1,0 +1,7 @@
+[build]
+command = "hugo --gc --minify"
+publish = "public"
+
+[context.production.environment]
+HUGO_VERSION = "0.145.0"  # 改为你的版本号，如 0.123.4
+HUGO_ENV = "production"

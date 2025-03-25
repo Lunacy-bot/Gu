@@ -4,14 +4,12 @@
   <article class="event-article">
     <h1>{{ .Title }}</h1>
     <div class="date">{{ .Date.Format "2006-01-02" }}</div>
-
-    {{/* 内容容器（限定 CSS 作用域） */}}
     <div class="event-content">
       {{ .Content }}
     </div>
   </article>
 
   {{/* 加载专用 CSS（合并两个 CSS 文件） */}}
-  {{ $css := resources.Get "css/events-fonts.css" | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ $css.Permalink }}">
+  {{ $css := resources.Get "css/events-fonts.css" | minify | fingerprint "sha512" }}
+  <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
 {{ end }}
