@@ -38,10 +38,21 @@ body {
     line-height: 1.8;
   }
 }
+/* ====== 移动端强制沉底补丁 ====== */
+@media (max-width: 767px) {
+  // 覆盖 Ananke 主题默认样式
+  body footer.site-footer {
+    position: fixed !important; // 改为固定定位
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 1000 !important;
+    background: rgba(248, 249, 250, 0.95) !important;
+    backdrop-filter: blur(10px) !important;
+  }
 
-/* 移动端适配 */
-@media (max-width: 768px) {
+  // 防止内容被遮挡
   body main {
-    padding-bottom: 80px; // 调整预留高度
+    padding-bottom: 120px !important; // 根据实际页脚高度调整
   }
 }
