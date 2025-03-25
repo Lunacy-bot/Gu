@@ -1,8 +1,18 @@
 {{ define "main" }}
   {{/* 正确继承基模板（自动通过 baseof.html 的 {{ block "main" }} 插入） */}}
 
-  <article class="event-article" style="padding: 0 4em 0 8em; max-width: 90%; margin: 0 auto;">
-    <div class="event-content" style="text-indent: 2em;">
+  <article 
+    class="event-article" 
+    style="
+      padding: 0 4em 0 8em; 
+      max-width: 90%; 
+      margin: 0 auto;  /* 容器居中 */
+    "
+  >
+    <div 
+      class="event-content" 
+      style="text-indent: 2em; text-align: left;"  /* 文字左对齐 */
+    >
       {{ .Content }}
     </div>
   </article>
