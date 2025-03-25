@@ -1,0 +1,50 @@
+/* assets/css/events.scss */
+
+// ====== 全局事件页面样式 ======
+.event-article {
+  // 桌面端布局
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 8em 0 4em; // 左8em 右4em 留白
+  line-height: 1.8;
+
+  // 移动端适配
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding: 0 1.5rem !important;
+  }
+
+  // 标题样式
+  h1 {
+    font-size: 2.4rem;
+    border-bottom: 2px solid #e74c3c;
+
+    @media (max-width: 768px) {
+      font-size: 1.8rem;
+    }
+  }
+
+  // 内容容器（合并原 event-content 和字体样式）
+  .event-content {
+    // 中文字体控制
+    font-family: 
+      "SimSun",       // Windows
+      "Songti SC",    // macOS
+      sans-serif;
+
+    // 段落样式（合并原 text-indent 和边距）
+    p {
+      text-indent: 2em;
+      margin: 1em 0;
+
+      @media (max-width: 768px) {
+        text-indent: 0;
+      }
+    }
+
+    // 数字/英文字体回退
+    :not(:lang(zh)) {
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+  }
+}

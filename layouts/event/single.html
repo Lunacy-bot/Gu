@@ -1,23 +1,13 @@
 {{ define "main" }}
-  {{/* 正确继承基模板（自动通过 baseof.html 的 {{ block "main" }} 插入） */}}
-
-  <article 
-    class="event-article" 
-    style="
-      padding: 0 4em 0 8em; 
-      max-width: 90%; 
-      margin: 0 auto;  /* 容器居中 */
-    "
-  >
-    <div 
-      class="event-content" 
-      style="text-indent: 2em; text-align: left;"  /* 文字左对齐 */
-    >
+  {{/* 精简后的结构 */}}
+  <article class="event-article">
+    <h1>{{ .Title }}</h1>
+    <div class="event-content">
       {{ .Content }}
     </div>
   </article>
 
-  {{/* 加载专用 CSS（合并两个 CSS 文件） */}}
-  {{ $css := resources.Get "css/events-fonts.css" | minify | fingerprint "sha512" }}
-  <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
+  {{/* 统一加载合并后的 CSS */}}
+  {{ $css := resources.Get "css/events.scss" | toCSS | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.Permalink }}">
 {{ end }}
