@@ -1,0 +1,26 @@
+{{ define "main" }}
+{{/* 独立事件页容器 */}}
+<div class="event-page">
+  
+  {{/* 正文内容 */}}
+  <article class="event-content">
+    <h1>{{ .Title }}</h1>
+    <div class="post-meta">
+      <time>{{ .Date.Format "2006-01-02" }}</time>
+    </div>
+    {{ .Content }}
+  </article>
+
+  {{/* 专用沉底页脚 */}}
+  <footer class="event-footer">
+    <div class="footer-inner">
+      © {{ now.Format "2006" }} Your Site Name | 
+      <a href="/privacy">Privacy Policy</a>
+    </div>
+  </footer>
+
+  {{/* 加载专用 CSS */}}
+  {{ $css := resources.Get "css/events.scss" | toCSS | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.Permalink }}">
+</div>
+{{ end }}

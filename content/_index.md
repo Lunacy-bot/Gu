@@ -10,4 +10,4 @@ draft: false
 ### 其中黄谱 / 红谱 / 紫谱 将设置排行榜，轮换结束时榜一玩家将会分别获得 9 / 8 / 7 折购买Vipass的奖励
 ### 参加课题奖励：完成当期轮换课题并结账时实付2小时，可获得体验券*1
 ---
-## [查看往期轮换课题公示](https://gugufun.netlify.app/event/rotate_his)
+## [查看往期轮换课题公示](https://gugufun.netlify.app/events/rotate_his)
