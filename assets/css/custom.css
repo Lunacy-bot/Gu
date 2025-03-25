@@ -60,3 +60,20 @@ body {
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, 
     "Microsoft YaHei", sans-serif; /* 其他内容字体 */
 }
+/* 全局强制字体（覆盖所有页面） */
+body,
+.global-content-wrap,
+article,  /* 针对单页模板 */
+.event-content {  /* 针对 event 目录的特定容器（按需调整） */
+  font-family: 
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, 
+    "SimSun", "Songti SC", "Noto Serif CJK SC", 
+    "Microsoft YaHei", sans-serif !important;  /* 关键：添加 !important */
+}
+
+/* 修复代码块等特殊内容 */
+code, pre {
+  font-family: 
+    "SimSun", "Songti SC",  /* 数字和代码也使用宋体 */
+    monospace !important;
+}

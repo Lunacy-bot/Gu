@@ -55,6 +55,7 @@
 
 	{{ $css := resources.Get "css/custom.css" | minify | fingerprint }}
 	<link rel="stylesheet" href="{{ $css.Permalink }}">
+	
   </head>
 
   {{- $environment := hugo.Environment | default "production" -}}
