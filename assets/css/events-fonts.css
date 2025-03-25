@@ -28,11 +28,29 @@
   padding: 0 4em 0 8em !important;   /* 上 右 下 左 (右=2个首行缩进，左=4个首行缩进) */
 }
 
-@media (max-width: 768px) {
-  /* 手机端缩小边距 */
+@media (max-width: 768px) {  /* 屏幕宽度 ≤ 768px 时生效 */
   .event-article {
-    max-width: 95% !important;
-    padding: 0 2em 0 4em !important;
+    max-width: 100%;          /* 占满屏幕宽度 */
+    padding: 0 1.5rem !important;  /* 左右留白缩小为 1.5rem（约 24px） */
+  }
+
+  .event-content {
+    text-indent: 0;           /* 取消首行缩进 */
+    font-size: 16px;          /* 增大字号提升可读性 */
+    line-height: 1.6;         /* 调整行高 */
+  }
+
+  /* 标题缩小 */
+  .event-article h1 {
+    font-size: 1.8rem;        /* 原桌面端可能是 2.5rem */
+    margin: 1rem 0;
+  }
+
+  /* 表格和图片自适应 */
+  .event-content table,
+  .event-content img {
+    max-width: 100% !important;
+    height: auto;
   }
 }
 
