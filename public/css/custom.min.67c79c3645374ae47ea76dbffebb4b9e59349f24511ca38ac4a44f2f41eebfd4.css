@@ -1,0 +1,1 @@
+.flex-container{display:flex;min-height:100vh;flex-direction:column}.content-wrap{flex:1;padding:20px}.site-footer{flex-shrink:0;background:#333;color:#fff;padding:2rem}body,.content-wrap,footer{border:1px solid red}

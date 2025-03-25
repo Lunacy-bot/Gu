@@ -1,4 +1,5 @@
 baseURL = "http://localhost:1313/"
 languageCode = "zh-CN"
-title = "My Hugo Web"
+title = "鸽屋轮换课题及活动一览"
 theme = "ananke"
+mainSections = ["content"]  # 仅渲染 content 目录的内容

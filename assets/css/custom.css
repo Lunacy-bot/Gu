@@ -1,0 +1,48 @@
+/* custom.css */
+.flex-container {
+  display: flex !important;
+  min-height: 100vh !important;
+  flex-direction: column !important;
+}
+
+.content-wrap {
+  flex: 1 !important;
+  padding: 20px;
+  width: 100%;
+}
+
+.site-footer {
+  flex-shrink: 0;
+  background: #333;
+  color: white;
+  padding: 2rem;
+}
+
+.main-content {
+  margin: 0 !important;
+}
+main.pb7 {
+  padding-bottom: 0 !important;
+  margin: 0 !important;
+  flex: 1; /* 确保 main 参与 Flex 布局 */
+}
+/* 全局内容容器 */
+.global-content-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* 全局页脚 */
+.global-site-footer {
+  background: #333;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* 所有页面标题统一 */
+.post-title, .page-title {
+  font-size: 2.5rem;
+  color: #2c3e50;
+}
