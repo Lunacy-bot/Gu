@@ -19,3 +19,38 @@
   color: #666;
   font-size: 0.9em;
 }
+
+/* ====== 内容容器边距控制 ====== */
+.event-article {
+  /* 控制内容整体宽度（居中 + 左右留白） */
+  max-width: 90%;         /* 内容区最大占屏幕宽度 90% */
+  margin: 0 auto;         /* 水平居中 */
+  padding: 0 4em 0 8em;   /* 上 右 下 左 (右=2个首行缩进，左=4个首行缩进) */
+}
+
+@media (max-width: 768px) {
+  /* 手机端缩小边距 */
+  .event-article {
+    max-width: 95%;
+    padding: 0 2em 0 4em;
+  }
+}
+
+/* ====== 文字对齐细节 ====== */
+.event-content {
+  text-align: left;       /* 强制左对齐 */
+  line-height: 1.8;       /* 增加行高提升可读性 */
+}
+
+.event-content p {
+  margin: 0.8em 0;        /* 段落间距 */
+  text-indent: 2em;       /* 首行缩进 2em */
+}
+
+/* 排除标题、列表等元素的首行缩进 */
+.event-content h1,
+.event-content h2,
+.event-content ul,
+.event-content ol {
+  text-indent: 0 !important;
+}
