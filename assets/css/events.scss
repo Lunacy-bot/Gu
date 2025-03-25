@@ -1,38 +1,34 @@
-/* assets/css/events.scss */
-
-// ====== 全局事件页面样式 ======
+// ====== 事件页面核心样式 ======
 .event-article {
   // 桌面端布局
   max-width: 90%;
   margin: 0 auto;
-  padding: 0 8em 0 4em; // 左8em 右4em 留白
+  padding: 0 8em 0 4em;
   line-height: 1.8;
+  min-height: calc(100vh - 12rem); // 留出页脚空间
 
   // 移动端适配
   @media (max-width: 768px) {
     max-width: 100%;
     padding: 0 1.5rem !important;
+    min-height: calc(100vh - 8rem); // 调整移动端留白
   }
 
-  // 标题样式
   h1 {
     font-size: 2.4rem;
     border-bottom: 2px solid #e74c3c;
+    margin-bottom: 2rem;
 
     @media (max-width: 768px) {
       font-size: 1.8rem;
+      margin-bottom: 1.5rem;
     }
   }
 
-  // 内容容器（合并原 event-content 和字体样式）
   .event-content {
-    // 中文字体控制
-    font-family: 
-      "SimSun",       // Windows
-      "Songti SC",    // macOS
-      sans-serif;
+    font-family: "SimSun", "Songti SC", sans-serif;
+    padding-bottom: 2rem; // 防止内容紧贴页脚
 
-    // 段落样式（合并原 text-indent 和边距）
     p {
       text-indent: 2em;
       margin: 1em 0;
@@ -42,9 +38,83 @@
       }
     }
 
-    // 数字/英文字体回退
     :not(:lang(zh)) {
       font-family: system-ui, -apple-system, sans-serif;
     }
+  }
+}
+
+// ====== 防位移页脚样式 ======
+.site-footer {
+  // 粘性定位核心配置
+  position: sticky;
+  bottom: 0;
+  z-index: 100;
+  background: rgba(248, 249, 250, 0.95);
+  backdrop-filter: blur(8px);
+  padding: 1.5rem 0;
+  border-top: 1px solid rgba(234, 236, 239, 0.5);
+
+  // 内容弹性布局
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+      padding: 0 1rem;
+    }
+  }
+
+  // 响应式高度控制
+  @media (min-width: 769px) {
+    height: 6rem; // 固定桌面端高度
+  }
+  @media (max-width: 768px) {
+    height: auto; // 移动端自动高度
+    padding: 1rem 0;
+  }
+
+  // 文字样式
+  color: #6c757d;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.9rem;
+
+  a {
+    color: #2c3e50;
+    transition: color 0.2s;
+    
+    &:hover {
+      color: #e74c3c;
+      text-decoration: underline;
+    }
+  }
+
+  .copyright {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    opacity: 0.8;
+  }
+}
+
+// ====== 全局防位移保障 ======
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+  main {
+    flex: 1;
+    padding-bottom: 6rem; // 匹配页脚高度
+  }
+}
+
+@media (max-width: 768px) {
+  body main {
+    padding-bottom: 4rem; // 移动端适配
   }
 }
