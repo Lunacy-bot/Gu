@@ -1,17 +1,31 @@
-// ====== 事件页面核心样式 ======
+// ====== 基础布局重置 ======
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;  // 关键保障
+  margin: 0;
+  padding: 0;
+}
+
+// ====== 内容区域 ======
+main {
+  flex: 1 0 auto;     // 自动扩展内容区
+  padding: 2rem 0;
+}
+
+// ====== 事件页面样式 ======
 .event-article {
-  // 桌面端布局
   max-width: 90%;
   margin: 0 auto;
   padding: 0 8em 0 4em;
-  line-height: 1.8;
-  min-height: calc(100vh - 12rem); // 留出页脚空间
 
-  // 移动端适配
   @media (max-width: 768px) {
     max-width: 100%;
     padding: 0 1.5rem !important;
-    min-height: calc(100vh - 8rem); // 调整移动端留白
   }
 
   h1 {
@@ -21,13 +35,12 @@
 
     @media (max-width: 768px) {
       font-size: 1.8rem;
-      margin-bottom: 1.5rem;
     }
   }
 
   .event-content {
     font-family: "SimSun", "Songti SC", sans-serif;
-    padding-bottom: 2rem; // 防止内容紧贴页脚
+    padding-bottom: 3rem;  // 增加底部留白
 
     p {
       text-indent: 2em;
@@ -44,39 +57,23 @@
   }
 }
 
-// ====== 防位移页脚样式 ======
+// ====== 始终沉底的页脚 ======
 .site-footer {
-  // 粘性定位核心配置
-  position: sticky;
-  bottom: 0;
-  z-index: 100;
-  background: rgba(248, 249, 250, 0.95);
-  backdrop-filter: blur(8px);
-  padding: 1.5rem 0;
-  border-top: 1px solid rgba(234, 236, 239, 0.5);
+  flex-shrink: 0;       // 禁止压缩
+  background: #f8f9fa;
+  border-top: 1px solid #eaecef;
+  padding: 2rem 0;
+  margin-top: auto;     // 关键沉底属性
 
-  // 内容弹性布局
   .footer-container {
-    display: flex;
-    justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
 
     @media (max-width: 768px) {
-      flex-direction: column;
-      text-align: center;
       padding: 0 1rem;
+      text-align: center;
     }
-  }
-
-  // 响应式高度控制
-  @media (min-width: 769px) {
-    height: 6rem; // 固定桌面端高度
-  }
-  @media (max-width: 768px) {
-    height: auto; // 移动端自动高度
-    padding: 1rem 0;
   }
 
   // 文字样式
@@ -95,26 +92,8 @@
   }
 
   .copyright {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     font-size: 0.8rem;
     opacity: 0.8;
-  }
-}
-
-// ====== 全局防位移保障 ======
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  
-  main {
-    flex: 1;
-    padding-bottom: 6rem; // 匹配页脚高度
-  }
-}
-
-@media (max-width: 768px) {
-  body main {
-    padding-bottom: 4rem; // 移动端适配
   }
 }
