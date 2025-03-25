@@ -1,80 +1,47 @@
-/* ====== 事件页全局样式 ====== */
-.event-page {
-  // 容器布局
+/* ====== 强制 Ananke 页脚沉底 ====== */
+body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  padding: 0 2rem;
+  position: relative;
 
-  // 移动端适配
-  @media (max-width: 768px) {
-    padding: 0 1rem;
+  main {
+    flex: 1;
+    padding-bottom: 100px; // 预留页脚高度
   }
 
-  /* --------- 正文内容区 --------- */
-  .event-content {
-    flex: 1; // 自动扩展填充空间
-    max-width: 800px;
-    margin: 2rem auto;
-    
-    // 中文宋体 + 英文系统字体
+  footer.site-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto; // 关键属性
+  }
+}
+
+/* ====== 事件页字体控制 ====== */
+.event-content {
+  // 中文宋体 + 英文系统字体
+  font-family: 
+    "SimSun",        // Windows
+    "Songti SC",     // macOS
+    sans-serif;
+
+  :not(:lang(zh)) {  // 非中文内容
     font-family: 
-      "SimSun",        // Windows 宋体
-      "Songti SC",     // macOS 宋体
+      system-ui,
+      -apple-system,
       sans-serif;
-    
-    // 数字/英文回退
-    :not(:lang(zh)) {
-      font-family: 
-        system-ui,     // 系统默认字体
-        -apple-system,
-        sans-serif;
-    }
-
-    // 段落样式
-    p {
-      text-indent: 2em;
-      line-height: 1.8;
-      margin: 1.5em 0;
-
-      @media (max-width: 768px) {
-        text-indent: 0;
-      }
-    }
-
-    // 标题不缩进
-    h1, h2, h3 {
-      text-indent: 0;
-    }
   }
 
-  /* --------- 固定沉底页脚 --------- */
-  .event-footer {
-    background: #f8f9fa;
-    border-top: 1px solid #eaecef;
-    padding: 1.5rem 0;
-    margin-top: auto; // 关键沉底属性
+  p {
+    text-indent: 2em;
+    line-height: 1.8;
+  }
+}
 
-    // 文字样式
-    color: #6c757d;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    font-size: 0.9rem;
-    text-align: center;
-
-    a {
-      color: #2c3e50;
-      transition: color 0.2s;
-      
-      &:hover {
-        color: #e74c3c;
-        text-decoration: underline;
-      }
-    }
-
-    // 移动端适配
-    @media (max-width: 768px) {
-      padding: 1rem 0;
-      font-size: 0.85rem;
-    }
+/* 移动端适配 */
+@media (max-width: 768px) {
+  body main {
+    padding-bottom: 80px; // 调整预留高度
   }
 }
