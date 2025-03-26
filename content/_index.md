@@ -15,4 +15,3 @@ draft: false
 ### 距离结束时间还剩5天咕
 ---
 ## [查看往期活动及轮换公示](https://gugufun.netlify.app/events/rotate_his)
-## [Test URL](http://localhost:1313/events/rotate_his/)
