@@ -9,14 +9,14 @@
     <lastBuildDate>Mon, 24 Mar 2025 21:44:52 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>往期轮换历史记录</title>
+      <title>轮换课题记录</title>
       <link>http://localhost:1313/events/rotate_his/</link>
       <pubDate>Mon, 24 Mar 2025 21:44:52 +0800</pubDate>
       <guid>http://localhost:1313/events/rotate_his/</guid>
       <description>&lt;h3 id=&#34;当前复活后暂无留档记录&#34;&gt;当前复活后暂无留档记录&lt;/h3&gt;</description>
     </item>
     <item>
-      <title>轮换课题</title>
+      <title>活动历史记录</title>
       <link>http://localhost:1313/events/event_his/</link>
       <pubDate>Mon, 24 Mar 2025 21:38:41 +0800</pubDate>
       <guid>http://localhost:1313/events/event_his/</guid>
