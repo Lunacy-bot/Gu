@@ -10,10 +10,17 @@
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Event记录</title>
-      <link>http://localhost:1313/events/rotate_his/</link>
+      <link>http://localhost:1313/rotate_his/</link>
       <pubDate>Mon, 24 Mar 2025 21:44:52 +0800</pubDate>
-      <guid>http://localhost:1313/events/rotate_his/</guid>
+      <guid>http://localhost:1313/rotate_his/</guid>
       <description>&lt;h3 id=&#34;202531-2025331&#34;&gt;2025.3.1-2025.3.31&lt;/h3&gt;&#xA;&lt;h3 id=&#34;咕st-代号幽灵&#34;&gt;咕ST 代号：幽灵&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;以下为咕st活动介绍：&lt;/li&gt;&#xA;&lt;li&gt;击败自己，生成咕st，赢取vipass。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;玩家行动：&#xA;&lt;ul&gt;&#xA;&lt;li&gt;A 根据店内公示的规则生成咕st-&amp;gt;抽一发泡泡糖机，获取vipass机会。&lt;/li&gt;&#xA;&lt;li&gt;B 第二次到店，选择行动，&lt;strong&gt;击破&lt;/strong&gt; ，获得时长优惠。或在击破前 &lt;strong&gt;再次生成咕st&lt;/strong&gt;，获取更多抽vipass机会。&lt;/li&gt;&#xA;&lt;li&gt;C 选择击破后到店，需要 &lt;strong&gt;进一步击破&lt;/strong&gt; **获得时长优惠。两次击破后可在下次到店继续生成咕st，重新获取抽vipass机会。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;vipass抽卡奖池情况：&#xA;&lt;ul&gt;&#xA;&lt;li&gt;每池总计50件物品，排出概率如下&#xA;&lt;ul&gt;&#xA;&lt;li&gt;橙：吃泡泡糖（46个）&lt;/li&gt;&#xA;&lt;li&gt;蓝：不吃泡泡糖多喝阔落（当日10元畅饮，3个）&lt;/li&gt;&#xA;&lt;li&gt;红：不吃泡泡糖多上机（vipass一张，1个）&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;20241112常驻&#34;&gt;2024.11.12[常驻]&lt;/h3&gt;&#xA;&lt;h3 id=&#34;活动情况&#34;&gt;活动情况&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;年底前，提供一个你去打过音游的地方，将情报整合一下发送给我们，最好附上一些评价。&lt;/li&gt;&#xA;&lt;li&gt;这样有人问起的时候我们就可以翻阅记录了解目标地点的情况告诉对方。&lt;/li&gt;&#xA;&lt;li&gt;然后往南京城区地图上放置一个标记，告诉其他玩家这里可以去打个卡。&lt;/li&gt;&#xA;&lt;li&gt;根据打卡数量，我们会换上不同种类的标记。非常期待活动结束时地图的状态。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;活动奖励&#34;&gt;活动奖励&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;提供新地点，提供关于已知地点的更多机台细节收费信息等情报，或者带着鸽屋周边前往已知地点打卡后返回鸽屋**&lt;/li&gt;&#xA;&lt;li&gt;可以获得：49元3小时优惠一次&lt;/li&gt;&#xA;&lt;li&gt;原价90元，购入10元以上鸽屋周边或持有徽章则降至57元&lt;/li&gt;&#xA;&lt;li&gt;以及原轮换课题下的所有优惠：&lt;/li&gt;&#xA;&lt;li&gt;打卡器3h或vipass2h送体验券（每半月重置一次）&lt;/li&gt;&#xA;&lt;li&gt;工作日vipass1.5倍结算（每周重置一次）&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;20241030-20241031&#34;&gt;2024.10.30-2024.10.31&lt;/h3&gt;&#xA;&lt;h3 id=&#34;万圣节限时活动&#34;&gt;万圣节限时活动&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;让骰子决定是奖励还是惩罚。完成骰子布置的任务，让鸽子跑满三圈，获得全部奖励。&lt;/li&gt;&#xA;&lt;li&gt;本周末前，你可以在打卡器附近获取鸽子跑图卡，确认课题详细内容，找店员投掷六面骰接受课题，以及提交课题投掷新的骰子&lt;/li&gt;&#xA;&lt;li&gt;完成跑图可以获得鸽屋体验券*2、以及99元vipass购入额度！&lt;/li&gt;&#xA;&lt;li&gt;跑不满三圈或者单纯想接着玩下去可以通过完成全部12个任务以获得大保底，至于是奖励还是惩罚就看骰子怎么说了&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;</description>
+    </item>
+    <item>
+      <title>活动历史记录</title>
+      <link>http://localhost:1313/event_his/</link>
+      <pubDate>Mon, 24 Mar 2025 21:38:41 +0800</pubDate>
+      <guid>http://localhost:1313/event_his/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>

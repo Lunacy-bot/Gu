@@ -14,4 +14,4 @@ draft: false
 ### 咕ST 代号：幽灵
 ### 距离结束时间还剩5天咕
 ---
-## [查看往期活动及轮换公示](https://gugufun.netlify.app/events/rotate_his)
+## [查看往期活动及轮换公示](https://gugufun.netlify.app/rotate_his)
