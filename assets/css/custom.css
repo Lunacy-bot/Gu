@@ -87,3 +87,36 @@ code, pre {
     line-height: 1.5 !important; 
   }
 }
+/* ====== 页眉背景控制 ====== */
+.bg-scaling {
+  background-size: 110% auto !important;  /* 横向放大10% */
+  background-position: center 30% !important;
+  
+  /* 移动端保持全屏覆盖 */
+  @media (max-width: 768px) {
+    background-size: cover !important;
+    background-position: center !important;
+  }
+}
+
+/* ====== 页眉字体控制 ====== */
+.tc-l h1.f-subheadline-l {
+  font-size: 3rem !important;  /* 原默认约5rem */
+  line-height: 1.2 !important;
+}
+
+.tc-l h2.f3-l {
+  font-size: 1.2rem !important;  /* 原默认约1.5rem */
+}
+
+/* 移动端进一步缩小 */
+@media (max-width: 768px) {
+  .tc-l h1.f-subheadline-l {
+    font-size: 2rem !important;
+  }
+  
+  .tc-l h2.f3-l {
+    font-size: 1rem !important;
+    max-width: 90%;
+  }
+}
