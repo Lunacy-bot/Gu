@@ -10,6 +10,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 1.5rem;
+  line-height: 1.6; /* 默认行间距增加 */
 }
 
 /* 响应式页脚系统 */
@@ -46,6 +47,7 @@ body {
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
     "SimSun", "Songti SC", 
     "Microsoft YaHei", sans-serif !important;
+  font-size: 16px; /* 新增基准字号 */
 }
 
 code, pre {
@@ -64,12 +66,24 @@ code, pre {
 
 /* 移动端优化 */
 @media (max-width: 768px) {
+  body {
+    font-size: 14px; /* 移动端基准字号缩小 */
+    line-height: 1.7; /* 行间距增加 */
+  }
+
   .global-content-wrap {
     padding: 1.5rem;
+    line-height: 1.7; /* 容器行间距同步增加 */
   }
   
   .post-title {
     font-size: 1.8rem;
     margin-bottom: 1rem;
+    line-height: 1.4; /* 标题行间距微调 */
+  }
+
+  /* 代码块行高保持原样 */
+  code, pre {
+    line-height: 1.5 !important; 
   }
 }
