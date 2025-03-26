@@ -10,4 +10,9 @@ draft: false
 ### 其中黄谱 / 红谱 / 紫谱 将设置排行榜，轮换结束时榜一玩家将会分别获得 9 / 8 / 7 折购买Vipass的奖励
 ### 参加课题奖励：完成当期轮换课题并结账时实付2小时，可获得体验券*1
 ---
-## [查看往期轮换课题公示](https://gugufun.netlify.app/events/rotate_his)
+# 当期限时活动 3.1-3.31
+### 咕ST 代号：幽灵
+### 距离结束时间还剩5天咕
+---
+## [查看往期活动及轮换公示](https://gugufun.netlify.app/events/rotate_his)
+## [Test URL](http://localhost:1313/events/rotate_his/)

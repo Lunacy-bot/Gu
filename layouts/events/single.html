@@ -14,11 +14,4 @@
 {{ $css := resources.Get "css/events.scss" | toCSS | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.Permalink }}">
 
-{{/*
-  <footer class="event-footer">
-    <div class="footer-inner">
-      © {{ now.Format "2006" }} Your Site Name
-    </div>
-  </footer>
-  */}}
 {{ end }}

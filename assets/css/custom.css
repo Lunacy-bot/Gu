@@ -1,79 +1,75 @@
-/* custom.css */
+/* 核心布局系统 */
 .flex-container {
   display: flex !important;
-  min-height: 100vh !important;
   flex-direction: column !important;
+  min-height: 100vh !important;
 }
 
-.content-wrap {
-  flex: 1 !important;
-  padding: 20px;
-  width: 100%;
+.global-content-wrap {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
 }
 
-.site-footer {
+/* 响应式页脚系统 */
+.global-site-footer {
   flex-shrink: 0;
   background: #333;
   color: white;
-  padding: 2rem;
-}
-
-.main-content {
-  margin: 0 !important;
-}
-main.pb7 {
-  padding-bottom: 0 !important;
-  margin: 0 !important;
-  flex: 1; /* 确保 main 参与 Flex 布局 */
-}
-/* 全局内容容器 */
-.global-content-wrap {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-/* 全局页脚 */
-.global-site-footer {
-  background: #333;
-  color: white;
-  padding: 2rem;
+  padding: 2rem 1rem;
   text-align: center;
 }
 
-/* 所有页面标题统一 */
-.post-title, .page-title {
-  font-size: 2.5rem;
-  color: #2c3e50;
+@media (max-width: 768px) {
+  .global-site-footer {
+    position: sticky;
+    bottom: 0;
+    z-index: 100;
+    padding: 1rem;
+    backdrop-filter: blur(8px);
+    background: rgba(51, 51, 51, 0.95);
+  }
 }
-/* 定义宋体字体（需确保用户系统已安装） */
+
+/* 字体优化系统 */
 @font-face {
   font-family: "NumberFont";
   src: local("SimSun"), local("Songti SC");
-  unicode-range: U+30-39; /* 仅覆盖 0-9 数字 */
+  unicode-range: U+30-39;
 }
 
-/* 应用数字字体 */
 body {
   font-family: 
-    "NumberFont",  /* 数字专用字体 */
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, 
-    "Microsoft YaHei", sans-serif; /* 其他内容字体 */
-}
-/* 全局强制字体（覆盖所有页面） */
-body,
-.global-content-wrap,
-article,  /* 针对单页模板 */
-.event-content {  /* 针对 event 目录的特定容器（按需调整） */
-  font-family: 
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, 
-    "SimSun", "Songti SC", "Noto Serif CJK SC", 
-    "Microsoft YaHei", sans-serif !important;  /* 关键：添加 !important */
+    "NumberFont",
+    -apple-system, BlinkMacSystemFont, 
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "SimSun", "Songti SC", 
+    "Microsoft YaHei", sans-serif !important;
 }
 
-/* 修复代码块等特殊内容 */
 code, pre {
   font-family: 
-    "SimSun", "Songti SC",  /* 数字和代码也使用宋体 */
+    "SimSun", "Songti SC",
     monospace !important;
+}
+
+/* 内容优化 */
+.post-title, .page-title {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
+}
+
+/* 移动端优化 */
+@media (max-width: 768px) {
+  .global-content-wrap {
+    padding: 1.5rem;
+  }
+  
+  .post-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
 }

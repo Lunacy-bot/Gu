@@ -9,13 +9,6 @@ body {
     flex: 1;
     padding-bottom: 100px; // 预留页脚高度
   }
-
-  footer.site-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    margin-top: auto; // 关键属性
-  }
 }
 
 /* ====== 事件页字体控制 ====== */
