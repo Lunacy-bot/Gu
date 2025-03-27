@@ -16,4 +16,5 @@ draft: false
 ### **咕ST 代号：幽灵**
 ### 持续时间：2025.3.1-3.31
 ---
-## [查看往期活动及轮换公示](https://gugufun.netlify.app/rotate_his)
+## [查看往期活动公示](https://gugufun.netlify.app/event_his)
+## [查看往期轮换课题公示](https://gugufun.netlify.app/rotate_his)
