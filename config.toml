@@ -1,0 +1,8 @@
+baseURL = "https://gugu.fun/content/public//"
+languageCode = "zh-cn"
+title = "我的网站"
+theme = "ananke"
+
+# 生产环境构建参数
+[build]
+  writeStats = true  # 生成构建统计信息
