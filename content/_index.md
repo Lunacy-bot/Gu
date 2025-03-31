@@ -16,7 +16,7 @@ draft: false
 ### **鸽拉松**
 ### 完成全部10个阶段，手办0元购！！
 ### 非徽章玩家完成全部阶段，铜徽章0元购！
-### 持续时间：2025.3.1-3.31
+### 持续时间：2025.4.1-4.30
 ---
 ## [点击这里查看轮换课题结果](https://gugufun.netlify.app/rotate_his)
 ## [点击这里查看往期活动记录](https://gugufun.netlify.app/event_his)
