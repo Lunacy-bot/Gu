@@ -10,7 +10,5 @@ title = 'Gutel Processor'
 ### 自动搭载拥有最新最热KonamiTools内存 足足128G
 ### 有了它还要什么显卡，同时装备SeGtx 9090 Ti 最大位宽64G
 ### 现在点击下方视频观看处理器预览吧！！！
-<video controls width="100%">
-  <source src="static/rickroll.mp4" type="video/mp4">
-  Gutel全新处理器
-</video>
+
+### [Gutel_G8型号展示视频](https://gugufun.netlify.app/Gutel_G8_ins.mp4)
