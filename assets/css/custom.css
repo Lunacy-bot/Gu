@@ -12,7 +12,13 @@
   margin: 0 auto;
   padding: 2rem 1.5rem;
   line-height: 1.6; /* 默认行间距增加 */
+  text-align: left !important;
+}
 
+/* 代码块强制左对齐 */
+code, pre {
+  font-family: "SimSun", "Songti SC", monospace !important;
+  text-align: left !important; /* 关键修复 */
 }
 
 
