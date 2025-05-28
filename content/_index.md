@@ -23,7 +23,7 @@ draft: false
 ---
 # 特殊活动 “助燃” 已经开启
 ### 完成课题任务，收集特殊token，为您探索“极日点”提供额外帮助
-### 关于活动，请访问 gugufun.netlify.app/event_infomation
+### 关于活动，请访问 gugufun.netlify.app/event_information
 ### 详情请关注群公告，以及 gugufun.netlify.app/ignite
 ---
 ## [点击这里查看Gutel处理器](https://gugufun.netlify.app/Gutel-processor)
