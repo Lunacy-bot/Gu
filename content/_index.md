@@ -26,6 +26,8 @@ draft: false
 ### 关于活动，请访问 gugufun.netlify.app/event_information
 ### 详情请关注群公告，以及 gugufun.netlify.app/ignite
 ---
+# 特殊活动 “卖弱了” 已经开启
+### 多结账1H登上排行榜装大B吧！保持榜上有免费游玩时长哦
 ## [点击这里查看Gutel处理器](https://gugufun.netlify.app/Gutel-processor)
 ## [点击这里查看轮换课题结果](https://gugufun.netlify.app/rotate_his)
 ## [点击这里查看往期活动记录](https://gugufun.netlify.app/event_his)
