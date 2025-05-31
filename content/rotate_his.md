@@ -4,6 +4,13 @@ draft = false
 title = '轮换课题记录'
 hidden = false
 +++
+### 5.1~5.31 MaiMai DX
+### 在本次项目中：
+- 恭喜玩家 杨书 在Adv难度中以 100.07% 的好成绩赢得了 129元Vipass*1 
+- 恭喜玩家 狙神 在Exp难度中以 201.2378% 的好成绩赢得了 114元Vipass*1 
+- 恭喜玩家 Music 在MAS难度中以 130.5844% 的好成绩赢得了 99元Vipass*1 
+### 同时也感谢所有参与了5月轮换课题的玩家们~！
+---
 ### 4.16-4.30 DanceDanceRevolution
 ### 在本次项目中：
 - 恭喜玩家 GoGosu 在Basic难度中以 990,480 的好成绩赢得了 129元Vipass*1
