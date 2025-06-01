@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313/"
+baseURL = "http://gugufun.netlify.app/"
 languageCode = "zh-CN"
 title = "鸽屋轮换课题及活动一览"
 theme = "ananke"
