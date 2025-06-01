@@ -28,6 +28,6 @@ draft: false
 ---
 # 特殊活动 “卖弱了” 已经开启
 ### 多结账1H登上排行榜装大B吧！保持榜上有免费游玩时长哦
-## [点击这里查看Gutel处理器](https://gugufun.netlify.app/Gutel-processor)
-## [点击这里查看轮换课题结果](https://gugufun.netlify.app/rotate_his)
-## [点击这里查看往期活动记录](https://gugufun.netlify.app/event_his)
+---
+### 查看往期轮换历史记录 gugufun.netlify.app/rotate_his
+### 查看鸽屋往期活动记录 gugufun.netlify.app/event_his
