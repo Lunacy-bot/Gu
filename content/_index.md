@@ -24,7 +24,7 @@ draft: false
 # 特殊活动 “助燃” 已经开启
 ### 完成课题任务，收集特殊token，为您探索“极日点”提供额外帮助
 ### 关于活动，请访问 gugufun.netlify.app/event_information
-### 详情请关注群公告，以及 gugufun.netlify.app/ignite
+### 火速查看“助燃”课题内容！ gugufun.netlify.app/ignite
 ---
 # 特殊活动 “卖弱了” 已经开启
 ### 多结账1H登上排行榜装大B吧！保持榜上有免费游玩时长哦
